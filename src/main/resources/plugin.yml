@@ -1,0 +1,21 @@
+name: WeaponMechanicsExtras
+main: com.gmail.robotnikman.WeaponMechanicsExtras.WeaponMechanicsExtras
+version: 1.0
+author: Robotnikman
+load: startup
+description: Extra options for WeaponMechanics
+website:
+commands:
+  WeaponMechanicsExtras:
+    description: The main WeaponMechanicsExtras Command
+    permission: WeaponMechanicsExtras.admin
+permissions:
+  WeaponMechanicsExtras.*:
+    description: The main WeaponMechanicsExtras Command
+    children:
+      WeaponMechanicsExtras.admin: true
+  WeaponMechanicsExtras.admin:
+    description: Allows you to use WeaponMechanicsExtras Admin commands
+    default: op
+
+depend: [WeaponMechanics,MythicMobs]
